@@ -24,10 +24,17 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+
       <body
+
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         {children}
+        <nav>
+            <a href="/">Home</a> |
+            <a href="/signup">Sign Up</a> |
+            <a href="/login">Log In</a>
+        </nav>
       </body>
     </html>
   );
